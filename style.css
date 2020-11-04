@@ -1,0 +1,94 @@
+:root {
+  --white-font-color:#fafafa;
+  --background: black;
+  --gray-background: #202020;
+}
+
+@font-face {
+  font-family: "GothamBold";
+  src: url("assets/fonts/Gotham\ Bold.otf")  format("truetype");
+}
+
+@font-face {
+  font-family: "GothamBook";
+  src: url("assets/fonts/Gotham\ Book.otf")  format("truetype");
+}
+
+html, body {
+  scroll-behavior: smooth; 
+  background-color: var(--background);
+  max-width: 100%;
+  overflow-x: hidden;
+  padding:0;
+  margin:0
+} 
+
+.background{
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0), var(--background)), url("assets/landing.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width:100vw;
+  height:60vh;
+}
+
+.landingTitle{
+  padding-top: 23vh;
+  margin-left: 5%;
+  margin-right: 5%;
+  line-height: 1;
+}
+
+.textTitle {
+  font-family: "GothamBold";
+  color: var(--white-font-color);
+  font-size: 100px;
+  height: 30vh;
+  display: flex;
+  align-items: flex-end;
+} 
+
+.textHeader {
+  font-family: "GothamBold";
+  color: var(--white-font-color);
+  font-size: 40px;
+} 
+
+.about{
+  display: flex;
+  align-items: center;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.textBox {
+  font-family: "GothamBook";
+  color: var(--white-font-color);
+  background-color: var(--gray-background);
+  border-radius: 2px;
+  width: auto;
+  padding: 1.5%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.textBoxBio {
+  width: 100%;
+  display:inline-block;
+  vertical-align: middle;
+}
+
+
+.bioPic{
+  margin-left: 2%;
+  margin-right: 2%;
+  object-fit: cover;
+  display:inline-block;
+  width: 22%;
+  box-shadow: 2px 3px 9px 1px rgba(97,97,97,1);
+  border-radius: 10px;
+  grid-area: bioPic;
+}
+
+@media only screen and (max-width: 767px) {
+}
