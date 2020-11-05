@@ -1,4 +1,4 @@
-var name = "John Smiths";
+var name = "John Smitheroo";
 var aboutContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a cursus tortor, id fringilla lectus. Mauris quis volutpat nunc. Maecenas mattis feugiat enim, et maximus orci vulputate sit amet. Aliquam aliquam ultrices odio. Nullam iaculis, tortor ut porta dapibus, lacus diam volutpat diam, nec molestie diam mi ac augue. Vivamus suscipit venenatis sem, id molestie nunc mollis et. In vitae sodales est, at lobortis lorem.";
 var experienceContent = [
     "Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent vestibulum orci vitae orci malesuada, ac placerat nulla feugiat. Phasellus aliquet, nisl eu ornare pharetra, metus arcu rhoncus est, vitae varius nunc libero in leo. Nunc turpis erat, accumsan et lorem vitae, pulvinar consequat orci. Donec mollis placerat tortor, quis dignissim lacus sagittis ut. Morbi at eros ac ante semper ultrices. Sed ligula tellus, laoreet a iaculis rhoncus, iaculis eu augue. Interdum et malesuada fames ac ante ipsum primis in faucibus.",
