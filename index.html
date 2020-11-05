@@ -7,9 +7,14 @@
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     </head>
     <body>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        
         <div class="navBar dropIn">
-            <div class="navBarName">
-                John Smith
+            <div class="navBarName" id="navBarName">
+                <script src="data.js"></script>
+                <script>
+                    document.getElementById("navBarName").innerHTML = name;
+                </script>
             </div>
             <a href="#about">
                 <div class="navBarButton">
@@ -29,31 +34,74 @@
         </div>
         <div class="background">
             <div class="landingTitle">
-                <div class="textTitle moveIn">John Smith</div>
+                <div class="textTitle moveIn" id="textTitle">
+                    <script src="data.js"></script>
+                    <script>
+                        document.getElementById("textTitle").innerHTML = name;
+                    </script>
+                </div>
             </div>
         </div>
         
         <div class="about" id="about">
-            <div class="textBox textBoxBio">
+            <div class="textBox">
                 <div class="textHeader">About me</div>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a cursus tortor, id fringilla lectus. Mauris quis volutpat nunc. Maecenas mattis feugiat enim, et maximus orci vulputate sit amet. Aliquam aliquam ultrices odio. Nullam iaculis, tortor ut porta dapibus, lacus diam volutpat diam, nec molestie diam mi ac augue. Vivamus suscipit venenatis sem, id molestie nunc mollis et. In vitae sodales est, at lobortis lorem.
+                <div id="aboutContent">
+                    <script src="data.js"></script>
+                    <script>
+                        document.getElementById("aboutContent").innerHTML = aboutContent;
+                    </script>
+                </div>
             </div>
             <div class="bioPic">
             </div>
         </div>
-
-        <div class="textBox textBoxBio" id="Experience">
-            <div class="textHeader">Experience</div>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a cursus tortor, id fringilla lectus. Mauris quis volutpat nunc. Maecenas mattis feugiat enim, et maximus orci vulputate sit amet. Aliquam aliquam ultrices odio. Nullam iaculis, tortor ut porta dapibus, lacus diam volutpat diam, nec molestie diam mi ac augue. Vivamus suscipit venenatis sem, id molestie nunc mollis et. In vitae sodales est, at lobortis lorem.
+        <div class="experience" id="experience">
+            <div class="textBox">
+                <div class="textHeader">Experience</div>
+                <div id="experienceContent">
+                    <script src="data.js"></script>
+                    <script>
+                        var out = "";
+                        for(i = 0; i < experienceContent.length; i++) {
+                            out+=experienceContent[i];
+                            out+='<br/><br/>';
+                        }
+                        document.getElementById("experienceContent").innerHTML = out;
+                    </script>
+                </div>
+            </div>
         </div>
-
-        <div class="textBox textBoxBio" id="contact">
-            <div class="textHeader">Contact me</div>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a cursus tortor, id fringilla lectus. Mauris quis volutpat nunc. Maecenas mattis feugiat enim, et maximus orci vulputate sit amet. Aliquam aliquam ultrices odio. Nullam iaculis, tortor ut porta dapibus, lacus diam volutpat diam, nec molestie diam mi ac augue. Vivamus suscipit venenatis sem, id molestie nunc mollis et. In vitae sodales est, at lobortis lorem.
+        <div class="contact" id="contact">
+            <div class="textBox">
+                <div class="textHeader">Contact</div>
+                <div id="contactContent">
+                    <script src="data.js"></script>
+                    <script>
+                        document.getElementById("contactContent").innerHTML = contactContent;
+                    </script>
+                </div>
+                <div id="contactIconBox"></div>
+                <script src="data.js"></script>
+                <script>
+                    out="";
+                    for(i = 0; i < contact.length; i++) {
+                        out+='<a href="';
+                        out+=contact[i].link;
+                        out+='"><i class="contactIcon fa-lg ';
+                        out+=contact[i].fontawesomeCode;
+                        out+='"></i></a>';
+                    }
+                    document.getElementById("contactIconBox").innerHTML = out;
+                </script>
+            </div>
+        </div>   
+        <div class="backgroundBottom">
+            <p class="imageCredit">Images from Unsplash, credit: Markus Spiske, Colton Sturgeon; Icons from FontAwesome</p>
         </div>
-       
         
     </body>
+
 </html>
 
 <!-- Images from Unsplash, credit: Markus Spiske, Colton Sturgeon-->
